@@ -342,6 +342,7 @@ footer .container p{
         position: absolute;
         top: 135%;
         right: 0%;
+        margin-right: -10px;
         justify-content: start;
         align-items: start;
         transition: .4s ease-in;
