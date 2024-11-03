@@ -360,11 +360,17 @@ footer .container p{
         display: initial;
         transition: .4s ease-in;
     }
+    #certificate .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
     .slider{
-        width: 40%;
+        width: 30%;
     }
     .images img{
-        height: 101px;
+        height: 100px;
     }
     .top-contact{
         min-width: 300px;
