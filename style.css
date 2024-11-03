@@ -192,8 +192,63 @@ header .logo{
     color: var(--dark-color);
     cursor: pointer;
 }
-#contact{
+#certificate .container{
     background: var(--dark-color);
+    padding: 20px;
+    place-items: center;
+    margin: 0 auto;
+}
+#certificate .container h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.6em;
+}
+#certificate .container p{
+    padding-bottom: 10px;
+}
+.slider{
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img{
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.images input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: all 0.15s ease;
+    border: solid #fff 3px;
+    margin: 5px;
+}
+.dots label:hover{
+    background: #fff;
+}
+#img1:checked ~ .c1{
+    margin-left: 0;
+}
+#img2:checked ~ .c2{
+    margin-left: -100%;
+}
+#contact{
+    background: var(--darker-color);
 }
 #contact h2{
     text-align: center;
@@ -304,6 +359,12 @@ footer .container p{
     #menu-bar:checked ~ .navbar{
         display: initial;
         transition: .4s ease-in;
+    }
+    .slider{
+        width: 40%;
+    }
+    .images img{
+        height: 101px;
     }
     .top-contact{
         min-width: 300px;
