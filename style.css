@@ -20,6 +20,9 @@ body,html{
     scroll-behavior: smooth;
     color: #fff;
 }
+img{
+    pointer-events: none;
+}
 body{
     font-size: 1.4rem;
 }
